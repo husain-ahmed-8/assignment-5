@@ -123,6 +123,7 @@ nav .info > div span {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
+  box-shadow: 0px 2px 10px #00000026;
 }
 
 .callHistory .title {
@@ -140,6 +141,13 @@ nav .info > div span {
   text-transform: capitalize;
   background: var(--green-4);
   color: white;
+}
+
+.callHistory .clearBtn:hover {
+  background: white;
+  color: var(--green-4);
+  border: 1px solid var(--green-4);
+  transition: 0.2s;
 }
 
 .callHistory .historyItems {
@@ -167,15 +175,22 @@ nav .info > div span {
 .cards .card {
   width: calc((100% - 40px) / 3);
   background: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0px 2px 10px #00000026;
 }
 
 .card .cardIcons {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.card .cardIcons .fa-heart:hover {
+  color: red;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 .card .cardIcons img {
@@ -193,11 +208,11 @@ p.cardNameBn {
 .card p.cardNameEN {
   font-size: 12px;
   color: #555555;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .card p.cardNumber {
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 14px;
   font-weight: 600;
 }
@@ -209,7 +224,7 @@ p.cardNameBn {
   padding: 4px 0px;
   text-align: center;
   border-radius: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .card .cardBtns {
@@ -226,6 +241,12 @@ p.cardNameBn {
   border-radius: 5px;
 }
 
+.card button.copyBtn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+
 button.callBtn {
   width: 50%;
   height: 35px;
@@ -233,4 +254,50 @@ button.callBtn {
   border-radius: 5px;
   background: var(--green-4);
   color: white;
+}
+
+button.callBtn:hover {
+  background: white;
+  color: var(--green-4);
+  border: 1px solid var(--green-4);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1100px) {
+  .cards {
+    width: 65%;
+  }
+
+  .callHistory {
+    width: 35%;
+  }
+
+  .cards .card {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main .container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .cards {
+    width: 100%;
+  }
+
+  .callHistory {
+    width: 100%;
+  }
+
+  .cards .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .container {
+    height: auto;
+    padding: 15px 0;
+  }
 }
