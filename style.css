@@ -103,3 +103,134 @@ nav .info > div span {
   padding: 10px 0;
   font-size: 30px;
 }
+
+.main {
+  background: var(--green-5);
+}
+
+.main .container {
+  display: flex;
+  padding: 35px 0;
+  gap: 20px;
+}
+
+.callHistory {
+  width: 25%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.callHistory .title {
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.callHistory .clearBtn {
+  height: 35px;
+  width: 90px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  background: var(--green-4);
+  color: white;
+}
+
+.callHistory .historyItems {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.historyItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #eaeaea5c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards .card {
+  width: calc((100% - 40px) / 3);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card .cardIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+
+.card .cardIcons img {
+  width: 40px;
+  background: var(--icon-bg-1);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+p.cardNameBn {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card p.cardNameEN {
+  font-size: 12px;
+  color: #555555;
+  padding: 5px 0;
+}
+
+.card p.cardNumber {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card p.cardType {
+  font-size: 12px;
+  background: #f3f3f3;
+  width: 60px;
+  padding: 4px 0px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.card .cardBtns {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card button.copyBtn {
+  width: 50%;
+  height: 35px;
+  border: 1px solid #d3d3d3;
+  background: white;
+  border-radius: 5px;
+}
+
+button.callBtn {
+  width: 50%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: var(--green-4);
+  color: white;
+}
