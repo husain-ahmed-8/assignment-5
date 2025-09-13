@@ -1,0 +1,105 @@
+:root {
+  --green-1: #01402d;
+  --green-2: #013324;
+  --green-3: #006344;
+  --green-4: #00a73d;
+  --green-5: #ebfef1;
+  --icon-bg-2: #deeffe;
+  --icon-bg-1: #fee2e3;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+nav .container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 35px;
+}
+
+nav .logo h2 {
+  line-height: 18px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  color: var(--green-1);
+  font-size: 18px;
+}
+
+nav .logo h2 span {
+  display: block;
+}
+
+nav .info {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav .info > div {
+  display: flex;
+  width: 90px;
+  height: 35px;
+  background: var(--green-5);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+nav .info > div img {
+  width: 20px;
+}
+
+nav .info > div span {
+  margin-right: 5px;
+}
+
+.copyCount {
+  text-transform: capitalize;
+  color: white;
+  background: var(--green-4) !important;
+}
+
+.hero {
+  background: linear-gradient(
+    90deg,
+    var(--green-2),
+    var(--green-3),
+    var(--green-2)
+  );
+}
+
+.hero .container {
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+}
+
+.hero .container img {
+  width: 70px;
+}
+
+.hero .container h1 {
+  padding: 10px 0;
+  font-size: 30px;
+}
